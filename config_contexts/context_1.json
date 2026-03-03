@@ -1,0 +1,28 @@
+{
+    "_metadata": {
+        "name": "Location NYC servers",
+        "weight": 1000,
+        "description": "NTP and Syslog servers for location NYC",
+        "is_active": true,
+        "locations": [{"name": "NYC"}],
+        "config_context_schema": "Config Context Schema 1"
+    },
+    "acl": {
+        "definitions": {
+            "named ": {
+                "PERMIT_ROUTES": [
+                  "10 permit ip any any"
+                ]
+            }
+        }
+    },
+    "route-maps": {
+        "PERMIT_CONN_ROUTES": {
+            "seq": 10,
+            "statements": [
+                "match ip address PERMIT_ROUTES"
+            ],
+            "type": "permit"
+        }
+    }
+}
