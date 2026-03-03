@@ -5,7 +5,6 @@
         "description": "NTP and Syslog servers for location NYC",
         "is_active": true,
         "locations": [{"name": "NYC"}],
-        "config_context_schema": "Config Context Schema 1"
     },
     "acl": {
         "definitions": {
