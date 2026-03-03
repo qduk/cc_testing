@@ -1,16 +1,16 @@
 {
     "_metadata": {
-        "name": "Location NYC servers",
+        "name": "Collision Test",
         "weight": 1000,
         "description": "NTP and Syslog servers for location NYC",
         "is_active": true,
-        "locations": [{"name": "NYC"}],
+        "locations": [{"name": "JCY"}],
     },
     "acl": {
         "definitions": {
             "named ": {
                 "PERMIT_ROUTES": [
-                  "10 permit ip any any"
+                  "20 permit ip any any"
                 ]
             }
         }
@@ -19,7 +19,7 @@
         "PERMIT_CONN_ROUTES": {
             "seq": 10,
             "statements": [
-                "match ip address PERMIT_ROUTES"
+                "match ip address PERMIT_ROUTE"
             ],
             "type": "permit"
         }
