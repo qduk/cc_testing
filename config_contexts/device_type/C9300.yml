@@ -1,0 +1,15 @@
+{
+    "_metadata": {
+        "name": "Region NYC servers",
+        "weight": 1000,
+        "description": "NTP and Syslog servers for region NYC",
+        "is_active": true,
+        "config_context_schema": "Config Context Schema 1"
+    },
+    "ntp-servers": [
+        "1.1.1.1",
+    ],
+    "syslog-servers": [
+        "2.2.2.2",
+    ]
+}
