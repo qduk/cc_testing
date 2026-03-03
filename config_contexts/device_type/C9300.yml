@@ -1,10 +1,9 @@
 {
     "_metadata": {
-        "name": "Region NYC servers",
+        "name": "C9300 Devices",
         "weight": 1000,
-        "description": "NTP and Syslog servers for region NYC",
+        "description": "NTP and Syslog servers for C9300",
         "is_active": true,
-        "config_context_schema": "Config Context Schema 1"
     },
     "ntp-servers": [
         "1.1.1.1",
